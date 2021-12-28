@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using SalesWebMvc.Models;
+using SalesWebMvc.Models.ViewModel;
 
 namespace SalesWebMvc.Controllers
 {
@@ -17,8 +17,8 @@ namespace SalesWebMvc.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
-
+            ViewData["Message"] = "Crud using MVC";
+            ViewData["GitHub"] = "https://github.com/leoonn?tab=repositories";
             return View();
         }
 
